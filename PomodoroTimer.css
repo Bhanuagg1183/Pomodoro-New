@@ -1,0 +1,288 @@
+.timer-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.timer-modal {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.close-button:hover {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.timer-content {
+  text-align: center;
+}
+
+.timer-header {
+  margin-bottom: 2rem;
+}
+
+.timer-header h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.5rem;
+}
+
+.current-task {
+  color: #64748b;
+  font-size: 1rem;
+}
+
+.current-task strong {
+  color: #e53e3e;
+}
+
+.tomato-timer {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto 2rem;
+}
+
+.timer-circle {
+  width: 100%;
+  height: 100%;
+}
+
+.progress-circle {
+  transition: stroke-dashoffset 1s ease;
+}
+
+.timer-display {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.time-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+}
+
+.timer-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.duration-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #f8fafc;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+}
+
+.duration-button {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.duration-button:hover:not(:disabled) {
+  background: #c53030;
+  transform: scale(1.1);
+}
+
+.duration-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.duration-display {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #334155;
+  min-width: 60px;
+}
+
+.action-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.control-button {
+  background: #e53e3e;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(229, 62, 62, 0.3);
+}
+
+.control-button:hover:not(:disabled) {
+  background: #c53030;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(229, 62, 62, 0.4);
+}
+
+.control-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.play-button {
+  width: 80px;
+  height: 80px;
+}
+
+.reset-button {
+  background: #64748b;
+  box-shadow: 0 4px 12px rgba(100, 116, 139, 0.3);
+}
+
+.reset-button:hover:not(:disabled) {
+  background: #475569;
+  box-shadow: 0 6px 16px rgba(100, 116, 139, 0.4);
+}
+
+.session-complete {
+  background: #f0f9ff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid #0ea5e9;
+  margin-top: 1rem;
+}
+
+.session-complete h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0369a1;
+  margin-bottom: 0.5rem;
+}
+
+.session-complete p {
+  color: #0284c7;
+  margin-bottom: 1rem;
+}
+
+.break-button {
+  background: #22c55e;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+  transition: all 0.2s ease;
+}
+
+.break-button:hover {
+  background: #16a34a;
+  transform: translateY(-1px);
+}
+
+.break-timer {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.break-icon {
+  margin-bottom: 1.5rem;
+  color: #22c55e;
+}
+
+.break-timer h2 {
+  font-size: 2rem;
+  color: #22c55e;
+  margin-bottom: 0.5rem;
+}
+
+.break-timer p {
+  color: #64748b;
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+}
+
+.break-duration {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #22c55e;
+  font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+}
+
+@media (max-width: 768px) {
+  .timer-modal {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .tomato-timer {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .time-text {
+    font-size: 2rem;
+  }
+  
+  .control-button {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .play-button {
+    width: 70px;
+    height: 70px;
+  }
+}
