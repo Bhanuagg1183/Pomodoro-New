@@ -46,7 +46,7 @@ A beautiful and comprehensive productivity application that seamlessly combines 
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### Pre-requisites
 - Node.js 16+ 
 - npm or yarn
 
