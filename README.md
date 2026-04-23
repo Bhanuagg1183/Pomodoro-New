@@ -46,7 +46,7 @@ A beautiful and comprehensive productivity application that seamlessly combines 
 
 ## 🚀 Getting Started
 
-### Pre-requisites
+### ✅ Pre-requisites
 - Node.js 16+ 
 - npm or yarn
 
@@ -109,20 +109,20 @@ The application is fully responsive with breakpoints optimized for:
 
 ## 🎯 Core Features Explained
 
-### Task Management
+### ✅ Task Management
 - **Add Tasks**: Simple input field with instant feedback
 - **Edit Tasks**: Double-click or edit button for inline editing
 - **Complete Tasks**: Checkbox moves tasks to completed section
 - **Delete Tasks**: Remove unwanted tasks with confirmation
 - **Reorder Tasks**: Drag and drop to prioritize
 
-### Pomodoro Technique
+### ✅ Pomodoro Technique
 - **Work Sessions**: Default 25-minute focused work periods
 - **Short Breaks**: 5-minute breaks between work sessions
 - **Long Breaks**: 15-minute breaks after 4 work sessions
 - **Session Tracking**: Automatic logging of completed sessions
 
-### Data Persistence
+### ✅ Data Persistence
 - **localStorage**: All data persists between browser sessions
 - **Auto-save**: Changes saved automatically without user action
 - **Data Recovery**: Graceful handling of corrupted data
