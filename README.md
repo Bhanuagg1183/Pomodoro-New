@@ -1,4 +1,4 @@
-# PomodoroTodo - React Productivity Application
+# Pomodoro To do - React Productivity Application
 
 A beautiful and comprehensive productivity application that seamlessly combines a to-do list with the Pomodoro time-management technique. Built with React, TypeScript, and modern web technologies.
 
@@ -46,7 +46,7 @@ A beautiful and comprehensive productivity application that seamlessly combines 
 
 ## 🚀 Getting Started
 
-### ✅ Pre-requisites
+### ✅ Pre-requisites:
 - Node.js 16+ 
 - npm or yarn
 
